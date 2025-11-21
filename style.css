@@ -1,81 +1,139 @@
 body {
-    margin:0;
-    font-family:'Inter',sans-serif;
-    color:#333;
-    background:#f5f8fa;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background: #e9ecef; /* cinza claro */
 }
+
 header {
-    background:#0b1b3a;
-    color:#fff;
-    padding:60px 20px;
-    text-align:center;
+    background: #0b1b3a;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
 }
+
 header h1 {
-    font-size:3rem;
-    margin-bottom:10px;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
+
 header p {
-    font-size:1.2rem;
-    margin-bottom:25px;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
 }
+
 .btn-primary {
-    display:inline-block;
-    padding:16px 32px;
-    background:#2563eb;
-    color:#fff;
-    text-decoration:none;
-    font-weight:600;
-    border-radius:8px;
+    display: inline-block;
+    padding: 16px 32px;
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
 }
+
 .btn-primary:hover {
-    background: #4c82f7;
-    transition: 0.3s; 
+    background: #1d4fd8;
+    transition: 0.3s;
     transform: scale(1.08);
 }
+
 .section {
-    max-width:1100px;
-    margin:auto;
-    padding:60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+    background: #f7f7f7; /* cinza mais suave */
+    border-radius: 12px;
+    margin-top: 40px;
 }
+
 .features {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-    margin-top:40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
 }
+
 .feature {
-    background:#f1f1f1;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 4px 20px rgba(0,0,0,0.05);
-    text-align:center;
+    background: #ededed; /* novo cinza */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    text-align: center;
 }
+
 .feature:hover {
-    background: #c4c4c4;
-    transition: 0.3s; 
+    background: #d4d4d4;
+    transition: 0.3s;
     transform: scale(1.08);
 }
-.feature img {
-    max-width:80px;
-    margin-bottom:20px;
-}
-.feature h3 {
-    margin:20px 0 10px;
-    font-size:1.4rem;
-}
+
 .cta {
-    background:#0b1b3a;
-    color:#fff;
-    text-align:center;
-    padding:60px 20px;
+    background: #0b1b3a;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
 }
-.cta h2 {
-    font-size:2rem;
-    margin-bottom:20px;
+
+/* FORMULÁRIO ----------------------*/
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+}
+
 .footer {
-    text-align:center;
-    padding:40px 20px;
-    font-size:0.9rem;
-    color:#777;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+/* Sessão Quem Somos */
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.team-card {
+    background: #e5e5e5;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.team-card:hover {
+    background: #d0d0d0;
+    transition: 0.3s ease;
+    transform: scale(1.05);
+}
+
+.team-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    color: #0b1b3a;
 }
